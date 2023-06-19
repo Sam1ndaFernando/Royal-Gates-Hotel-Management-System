@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="jfoenix-8.0.7" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-8.0.11" level="project" />
+    <orderEntry type="library" name="GNCalendar-1.0-alpha" level="project" />
+    <orderEntry type="library" name="AnimateFX-1.2.3" level="project" />
+    <orderEntry type="library" name="batik-anim" level="project" />
+    <orderEntry type="library" name="animatefx-1.2.0" level="project" />
+    <orderEntry type="library" name="mysql-connector-j-8.0.33" level="project" />
+  </component>
+</module>

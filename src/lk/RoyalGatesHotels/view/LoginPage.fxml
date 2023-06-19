@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginContext" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.RoyalGatesHotels.controller.LoginPageController">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Ui/login_page.JPG" />
+         </image>
+      </ImageView>
+      <Label graphicTextGap="2.0" layoutX="1026.0" layoutY="380.0" text="Login" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Light" size="96.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtUsername" focusColor="WHITE" labelFloat="true" layoutX="713.0" layoutY="600.0" onAction="#txtUsernameOnAction" prefWidth="444.0" promptText="Username" style="-fx-font-size: 25; -fx-fill: white;" unFocusColor="WHITE" />
+      <Label fx:id="lblForgotPassword" layoutX="889.0" layoutY="795.0" style="-fx-text-fill: white;" text="Forgot your password ?" textAlignment="CENTER" />
+      <JFXButton layoutX="770.0" layoutY="829.0" onAction="#btnLogin" opacity="0.5" prefHeight="86.0" prefWidth="385.0" style="-fx-background-color: BLACK; -fx-font-size: 35; -fx-background-radius: 20;" text="Login" textFill="WHITE" AnchorPane.rightAnchor="765.0" />
+      <Label fx:id="lblTime" graphicTextGap="2.0" layoutX="1475.0" layoutY="804.0" prefHeight="46.0" prefWidth="406.0" text="11:45" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Segoe UI" size="120.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" graphicTextGap="2.0" layoutX="1477.0" layoutY="939.0" text="Thursday, October 27" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Light" size="40.0" />
+         </font>
+      </Label>
+      <JFXPasswordField fx:id="txtPassword" focusColor="WHITE" labelFloat="true" layoutX="719.0" layoutY="714.0" prefWidth="444.0" promptText="Password" unFocusColor="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXPasswordField>
+   </children>
+</AnchorPane>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gn.lab.GNCalendarTile?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="receptionContext" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.RoyalGatesHotels.controller.ReceptionistDashboardController">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Ui/receptionistDashboard.PNG" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblTime" graphicTextGap="2.0" layoutX="1631.0" layoutY="51.0" prefHeight="73.0" prefWidth="187.0" text="11:45" wrapText="true">
+         <font>
+            <Font name="Segoe UI" size="60.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" graphicTextGap="2.0" layoutX="1638.73" layoutY="121.0" text="Thursday, October 27">
+         <font>
+            <Font name="Segoe UI Light" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton alignment="CENTER" contentDisplay="TOP" graphicTextGap="2.0" layoutX="29.0" layoutY="120.0" onAction="#btnDashboard" prefHeight="93.0" prefWidth="100.0" style="-fx-background-radius: 25;" text="Dashboard " textAlignment="CENTER" textFill="#d0d0d0">
+         <graphic>
+            <ImageView fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons/AdminIcons/Home.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="11.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="CENTER" contentDisplay="TOP" graphicTextGap="2.0" layoutX="29.0" layoutY="746.0" onAction="#btnComplaint" prefHeight="93.0" prefWidth="100.0" style="-fx-background-radius: 25;" text="Complaint" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="78.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true" x="39.0" y="453.0">
+               <image>
+                  <Image url="@../assets/icons/ReceptionistIcons/complain.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton alignment="CENTER" contentDisplay="TOP" graphicTextGap="0.0" layoutX="29.0" layoutY="434.0" onAction="#btnMarkMaintenance" prefHeight="93.0" prefWidth="100.0" style="-fx-background-radius: 25;" text="Mark Maintenance" textFill="WHITE" wrapText="true">
+         <graphic>
+            <ImageView fitHeight="78.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true" x="40.0" y="545.0">
+               <image>
+                  <Image url="@../assets/icons/ReceptionistIcons/maintenance.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="10.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="CENTER" contentDisplay="TOP" graphicTextGap="0.0" layoutX="29.0" layoutY="326.0" onAction="#btnSelectMeals" prefHeight="93.0" prefWidth="100.0" style="-fx-background-radius: 25;" text="Select Meals" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <graphic>
+            <ImageView fitHeight="78.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true" x="48.0" y="337.0">
+               <image>
+                  <Image url="@../assets/icons/ReceptionistIcons/dinner.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="10.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="CENTER" contentDisplay="TOP" graphicTextGap="0.0" layoutX="29.0" layoutY="222.0" onAction="#btnReservation" prefHeight="93.0" prefWidth="100.0" style="-fx-background-radius: 25;" text="Reservation" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" x="50.0" y="237.0">
+               <image>
+                  <Image url="@../assets/icons/ReceptionistIcons/Reservation.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="11.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="CENTER" contentDisplay="TOP" defaultButton="true" graphicTextGap="0.0" layoutX="29.0" layoutY="540.0" onAction="#btnPayment" prefHeight="93.0" prefWidth="100.0" style="-fx-background-radius: 25;" text="Payment" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="78.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true" x="78.0" y="653.0">
+               <image>
+                  <Image url="@../assets/icons/ReceptionistIcons/payment.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton alignment="CENTER" contentDisplay="TOP" defaultButton="true" graphicTextGap="0.0" layoutX="29.0" layoutY="646.0" onAction="#btnGuests" prefHeight="93.0" prefWidth="100.0" style="-fx-background-radius: 25;" text="Guests" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="70.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" x="39.0" y="754.0">
+               <image>
+                  <Image url="@../assets/icons/ReceptionistIcons/customers.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton defaultButton="true" graphicTextGap="0.0" layoutX="20.0" layoutY="900.0" onAction="#btnLogout" prefHeight="68.0" prefWidth="119.0" style="-fx-background-radius: 25;" text="Logout" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="54.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" x="29.0" y="907.0">
+               <image>
+                  <Image url="@../assets/icons/AdminIcons/logout.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton defaultButton="true" graphicTextGap="0.0" layoutX="258.0" layoutY="66.0" onAction="#btnAboutUs" prefHeight="37.0" prefWidth="158.0" style="-fx-background-radius: 25; -fx-background-color: #ACB0B7;" text="About us" textFill="#354259">
+         <font>
+            <Font name="Segoe UI" size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton defaultButton="true" graphicTextGap="0.0" layoutX="460.0" layoutY="66.0" onAction="#btnContact" prefHeight="37.0" prefWidth="158.0" style="-fx-background-radius: 25; -fx-background-color: #ACB0B7;" text="Contact" textFill="#354259">
+         <font>
+            <Font name="Segoe UI" size="25.0" />
+         </font>
+      </JFXButton>
+      <Pane layoutX="239.0" layoutY="237.0" prefHeight="206.0" prefWidth="509.0" style="-fx-background-color: #ACB0B7; -fx-background-radius: 25;">
+         <children>
+            <Label layoutX="237.0" layoutY="146.0" text="Total Rooms" textFill="#354259">
+               <font>
+                  <Font name="Segoe UI" size="35.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTotalRooms" layoutX="233.0" layoutY="9.0" text="25" textFill="#354259">
+               <font>
+                  <Font name="Segoe UI" size="120.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="96.0" fitWidth="143.0" layoutX="-230.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true" x="268.0">
+               <image>
+                  <Image url="@../assets/icons/AdminIcons/bed.png" />
+               </image>
+            </ImageView>
+            <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" onAction="#btnTotalRooms" prefHeight="206.0" prefWidth="509.0" style="-fx-background-radius: 25;" wrapText="true" />
+         </children>
+      </Pane>
+      <Pane layoutX="792.0" layoutY="237.0" prefHeight="206.0" prefWidth="509.0" style="-fx-background-color: #ACB0B7; -fx-background-radius: 25;">
+         <children>
+            <Label layoutX="237.0" layoutY="146.0" text="Booked Rooms" textFill="#354259">
+               <font>
+                  <Font name="Segoe UI" size="35.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblBookedRooms" layoutX="233.0" layoutY="9.0" text="15" textFill="#354259">
+               <font>
+                  <Font name="Segoe UI" size="120.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="126.0" fitWidth="126.0" layoutX="-224.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true" x="268.0">
+               <image>
+                  <Image url="@../assets/icons/ReceptionistIcons/5110947.png" />
+               </image>
+            </ImageView>
+            <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" onAction="#btnBookedRooms" prefHeight="206.0" prefWidth="509.0" style="-fx-background-radius: 25;" text="Button" wrapText="true" />
+         </children>
+      </Pane>
+      <Pane layoutX="239.0" layoutY="487.0" prefHeight="223.0" prefWidth="339.0" style="-fx-background-color: #ACB0B7; -fx-background-radius: 25;">
+         <children>
+            <ImageView fitHeight="126.0" fitWidth="126.0" layoutX="-78.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" x="268.0">
+               <image>
+                  <Image url="@../assets/icons/ReceptionistIcons/5110947.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="36.0" layoutY="165.0" text="Booked Halls" textFill="#354259">
+               <font>
+                  <Font name="Segoe UI" size="35.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblBookedHalls" layoutX="32.0" layoutY="37.0" text="01" textFill="#354259">
+               <font>
+                  <Font name="Segoe UI" size="120.0" />
+               </font>
+            </Label>
+            <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#btnBookedHalls" prefHeight="223.0" prefWidth="339.0" style="-fx-background-radius: 25;" text="Button" />
+         </children>
+      </Pane>
+      <Pane layoutX="604.0" layoutY="487.0" prefHeight="223.0" prefWidth="339.0" style="-fx-background-color: #ACB0B7; -fx-background-radius: 25;">
+         <children>
+            <ImageView fitHeight="177.0" fitWidth="177.0" layoutX="-116.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" x="268.0">
+               <image>
+                  <Image url="@../assets/icons/ReceptionistIcons/availability.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="36.0" layoutY="165.0" text="Available Halls" textFill="#354259">
+               <font>
+                  <Font name="Segoe UI" size="35.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblAvailableHalls" layoutX="32.0" layoutY="37.0" text="01" textFill="#354259">
+               <font>
+                  <Font name="Segoe UI" size="120.0" />
+               </font>
+            </Label>
+            <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#btnAvailableHalls" prefHeight="223.0" prefWidth="339.0" style="-fx-background-radius: 25;" text="Button" />
+         </children>
+      </Pane>
+      <Pane layoutX="1345.0" layoutY="237.0" prefHeight="206.0" prefWidth="509.0" style="-fx-background-color: #ACB0B7; -fx-background-radius: 25;">
+         <children>
+            <Label layoutX="222.0" layoutY="146.0" text="Available Rooms" textFill="#354259">
+               <font>
+                  <Font name="Segoe UI" size="35.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblAvailableRooms" layoutX="218.0" layoutY="9.0" text="10" textFill="#354259">
+               <font>
+                  <Font name="Segoe UI" size="120.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="177.0" fitWidth="177.0" layoutX="-248.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" x="268.0">
+               <image>
+                  <Image url="@../assets/icons/ReceptionistIcons/availability.png" />
+               </image>
+            </ImageView>
+            <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" onAction="#btnAvailableRooms" prefHeight="206.0" prefWidth="509.0" style="-fx-background-radius: 25;" text="Button" wrapText="true" />
+         </children>
+      </Pane>
+      <Pane layoutX="241.0" layoutY="754.0" prefHeight="206.0" prefWidth="702.0" style="-fx-background-color: C9BAC1; -fx-background-radius: 25;">
+         <children>
+            <ImageView fitHeight="177.0" fitWidth="177.0" layoutX="-239.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" x="268.0">
+               <image>
+                  <Image url="@../assets/icons/ReceptionistIcons/complain.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="429.0" layoutY="144.0" text="Complaints" textFill="#490025">
+               <font>
+                  <Font name="Segoe UI" size="35.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblComplaints" layoutX="479.0" layoutY="12.0" text="01" textFill="#490025">
+               <font>
+                  <Font name="Segoe UI" size="120.0" />
+               </font>
+            </Label>
+            <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#btnComplaints" prefHeight="206.0" prefWidth="702.0" style="-fx-background-radius: 25;" text="Button" />
+         </children>
+      </Pane>
+      <GNCalendarTile layoutX="974.0" layoutY="488.0" prefHeight="497.0" prefWidth="469.0" style="-fx-background-radius: 25;" />
+   </children>
+</AnchorPane>

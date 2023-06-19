@@ -1,0 +1,23 @@
+<component name="libraryTable">
+  <library name="animatefx-1.2.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/lk/RoyalGatesHotels/lib/animatefx-1.2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lk/RoyalGatesHotels/lib/AnimateFX-1.2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lk/RoyalGatesHotels/lib/colors-1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lk/RoyalGatesHotels/lib/controlsfx-8.40.14.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lk/RoyalGatesHotels/lib/fontawesomefx-8.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lk/RoyalGatesHotels/lib/GNAvatarView-1.0-rc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lk/RoyalGatesHotels/lib/GNButton-1.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lk/RoyalGatesHotels/lib/GNCalendar-1.0-alpha.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lk/RoyalGatesHotels/lib/GNCarousel-2.1.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lk/RoyalGatesHotels/lib/GNDecorator-2.1.2-alpha.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lk/RoyalGatesHotels/lib/jfoenix-8.0.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lk/RoyalGatesHotels/lib/mysql-connector-java-8.0.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lk/RoyalGatesHotels/lib/mysql-connector-java-8.0.30.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lk/RoyalGatesHotels/lib/scenicView.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lk/RoyalGatesHotels/lib/tilesfx-1.5.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

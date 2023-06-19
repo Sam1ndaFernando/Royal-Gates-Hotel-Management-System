@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="HallReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="113553c9-fc8e-4255-a0cb-c74343835e0e">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter"/>
+	<queryString language="SQL">
+		<![CDATA[select * from hall]]>
+	</queryString>
+	<field name="hall_number" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="hall_number"/>
+		<property name="com.jaspersoft.studio.field.label" value="hall_number"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="hall"/>
+	</field>
+	<field name="hall_type" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="hall_type"/>
+		<property name="com.jaspersoft.studio.field.label" value="hall_type"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="hall"/>
+	</field>
+	<field name="status" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="status"/>
+		<property name="com.jaspersoft.studio.field.label" value="status"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="hall"/>
+	</field>
+	<field name="price" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="price"/>
+		<property name="com.jaspersoft.studio.field.label" value="price"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="hall"/>
+	</field>
+	<group name="hall_number">
+		<groupExpression><![CDATA[$F{hall_number}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="212" splitType="Stretch">
+			<image>
+				<reportElement x="208" y="16" width="144" height="104" uuid="3cce9632-bc34-4400-99d8-815a5b149c28"/>
+				<imageExpression><![CDATA["C:/Users/USER/Documents/Final Project/Project File/Hotel Reservation System/src/lk/RoyalGatesHotels/assets/icons/Royal Gates Logo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="105" y="116" width="350" height="59" forecolor="#010747" uuid="f3709679-b5c3-4c28-bcb1-db5a8d0af742"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="40" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Royal Gates Hotel]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="430" y="17" width="130" height="20" uuid="b118ca19-56ab-470f-a92e-558709246808"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="58" splitType="Stretch">
+			<staticText>
+				<reportElement x="240" y="15" width="74" height="30" uuid="7b4a97e1-dd31-4cb0-ad3c-5b25afbe6968"/>
+				<textElement textAlignment="Justified">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hall List]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="39" splitType="Stretch">
+			<staticText>
+				<reportElement x="37" y="9" width="140" height="30" uuid="306deb9d-84d3-48b5-8683-60de65f62e70">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="00767c87-afc1-4bb4-8e29-575dfd41b932"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hall Number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="178" y="9" width="138" height="30" uuid="73d5313d-5096-44ec-b730-7f38858a15c8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="88a46985-1e75-4c6b-9718-a31887ebdee3"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hall Type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="317" y="9" width="148" height="30" uuid="a7a28ca8-672c-4d81-87d6-1b10cf82cb59">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a495e96d-63c6-467b-937f-2f3d2a368695"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Status]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="465" y="9" width="110" height="30" uuid="5a5f257f-c7d3-4de5-8fa8-e1d88425b0f8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2d88b237-229c-42b8-b3f4-46a26d4b9992"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Price]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="37" y="2" width="140" height="18" uuid="c9745053-ae65-477d-af14-3bc5a669f99c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="00767c87-afc1-4bb4-8e29-575dfd41b932"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{hall_number}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="178" y="2" width="138" height="18" uuid="045f3217-14fb-4729-bae6-1cc1ec3410fa">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="88a46985-1e75-4c6b-9718-a31887ebdee3"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{hall_type}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="316" y="2" width="148" height="18" uuid="3d3870de-1029-49d0-99c0-3dd69fe4618e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a495e96d-63c6-467b-937f-2f3d2a368695"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="464" y="2" width="110" height="18" uuid="df0a6725-e395-43d1-9f55-e3c3cf102104">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2d88b237-229c-42b8-b3f4-46a26d4b9992"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{price}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

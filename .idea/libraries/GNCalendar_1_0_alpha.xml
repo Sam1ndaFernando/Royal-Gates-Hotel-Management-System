@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="GNCalendar-1.0-alpha">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/lk/RoyalGatesHotels/lib/GNCalendar-1.0-alpha.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

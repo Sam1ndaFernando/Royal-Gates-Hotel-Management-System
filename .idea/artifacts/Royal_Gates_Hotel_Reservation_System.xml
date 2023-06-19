@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="Royal Gates Hotel Reservation System">
+    <output-path>$PROJECT_DIR$/out/artifacts/Royal_Gates_Hotel_Reservation_System</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="Mail" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="nativeBundle" value="all" />
+        <option name="title" value="" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="Royal_Gates_Hotel_Reservation_System.jar">
+        <element id="module-output" name="Royal Gates Hotel Reservation System" />
+      </element>
+    </root>
+  </artifact>
+</component>

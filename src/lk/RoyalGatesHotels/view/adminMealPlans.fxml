@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="adminMealplansContext" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.RoyalGatesHotels.controller.AdminMealPlansController">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Ui/adminMealPlans.PNG" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblTime" graphicTextGap="2.0" layoutX="1631.0" layoutY="51.0" prefHeight="73.0" prefWidth="187.0" text="11:45" wrapText="true">
+         <font>
+            <Font name="Segoe UI" size="60.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" graphicTextGap="2.0" layoutX="1638.73" layoutY="121.0" text="Thursday, October 27">
+         <font>
+            <Font name="Segoe UI Light" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton alignment="CENTER" contentDisplay="TOP" graphicTextGap="2.0" layoutX="29.0" layoutY="120.0" onAction="#btnDashboard" prefHeight="93.0" prefWidth="100.0" style="-fx-background-radius: 25;" text="Dashboard " textAlignment="CENTER" textFill="#d0d0d0">
+         <graphic>
+            <ImageView fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons/AdminIcons/Home.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="11.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="CENTER" contentDisplay="TOP" graphicTextGap="2.0" layoutX="29.0" layoutY="434.0" onAction="#btnRooms" prefHeight="93.0" prefWidth="100.0" style="-fx-background-radius: 25;" text="Rooms" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="78.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true" x="39.0" y="453.0">
+               <image>
+                  <Image url="@../assets/icons/AdminIcons/bed.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton alignment="CENTER" contentDisplay="TOP" graphicTextGap="0.0" layoutX="29.0" layoutY="535.0" onAction="#btnMealPlans" prefHeight="93.0" prefWidth="100.0" style="-fx-background-radius: 25;" text="Meal Plans" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="78.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true" x="40.0" y="545.0">
+               <image>
+                  <Image url="@../assets/icons/AdminIcons/dinner.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton alignment="CENTER" contentDisplay="TOP" graphicTextGap="2.0" layoutX="29.0" layoutY="325.0" onAction="#btnUsers" prefHeight="93.0" prefWidth="100.0" style="-fx-background-radius: 25;" text="Users" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <graphic>
+            <ImageView fitHeight="78.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true" x="48.0" y="337.0">
+               <image>
+                  <Image url="@../assets/icons/AdminIcons/passwrdmaneger.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="10.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="CENTER" contentDisplay="TOP" graphicTextGap="2.0" layoutX="29.0" layoutY="222.0" onAction="#btnEmployee" prefHeight="93.0" prefWidth="100.0" style="-fx-background-radius: 25;" text="Employee" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="58.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" x="50.0" y="237.0">
+               <image>
+                  <Image url="@../assets/icons/AdminIcons/user.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="11.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="CENTER" contentDisplay="TOP" defaultButton="true" graphicTextGap="0.0" layoutX="29.0" layoutY="646.0" onAction="#btnBanquetHalls" prefHeight="93.0" prefWidth="100.0" style="-fx-background-radius: 25;" text="Banquet Halls" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="78.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true" x="78.0" y="653.0">
+               <image>
+                  <Image url="@../assets/icons/AdminIcons/hall2.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton alignment="CENTER" contentDisplay="TOP" defaultButton="true" graphicTextGap="0.0" layoutX="29.0" layoutY="748.0" onAction="#btnReports" prefHeight="93.0" prefWidth="100.0" style="-fx-background-radius: 25;" text="Reports" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="63.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" x="39.0" y="754.0">
+               <image>
+                  <Image url="@../assets/icons/AdminIcons/Report.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton defaultButton="true" graphicTextGap="0.0" layoutX="20.0" layoutY="900.0" onAction="#btnLogout" prefHeight="68.0" prefWidth="119.0" style="-fx-background-radius: 25;" text="Logout" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="54.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" x="29.0" y="907.0">
+               <image>
+                  <Image url="@../assets/icons/AdminIcons/logout.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton defaultButton="true" graphicTextGap="0.0" layoutX="258.0" layoutY="66.0" onAction="#btnAboutUs" prefHeight="37.0" prefWidth="158.0" style="-fx-background-radius: 25; -fx-background-color: #ACB0B7;" text="About us" textFill="#354259">
+         <font>
+            <Font name="Segoe UI" size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton defaultButton="true" graphicTextGap="0.0" layoutX="460.0" layoutY="66.0" onAction="#btnContact" prefHeight="37.0" prefWidth="158.0" style="-fx-background-radius: 25; -fx-background-color: #ACB0B7;" text="Contact" textFill="#354259">
+         <font>
+            <Font name="Segoe UI" size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtPackageId" labelFloat="true" layoutX="280.0" layoutY="507.0" onAction="#PackageIdOnAction" prefHeight="30.0" prefWidth="380.0" promptText="Package Id">
+         <font>
+            <Font name="Segoe UI" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtMealPlans" labelFloat="true" layoutX="280.0" layoutY="690.0" prefHeight="30.0" prefWidth="380.0" promptText="Meal Plans">
+         <font>
+            <Font name="Segoe UI" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtMealType" labelFloat="true" layoutX="280.0" layoutY="816.0" prefHeight="30.0" prefWidth="380.0" promptText="Meal Type">
+         <font>
+            <Font name="Segoe UI" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="280.0" layoutY="925.0" onAction="#btnAddMeal" prefHeight="61.0" prefWidth="260.0" style="-fx-background-color: A5B3CC; -fx-background-radius: 15;" text="Add Meal" textFill="#354259">
+         <font>
+            <Font name="Segoe UI" size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="618.0" layoutY="925.0" onAction="#btnUpdateMeal" prefHeight="61.0" prefWidth="260.0" style="-fx-background-color: B4B8BF; -fx-background-radius: 15;" text="Update Meal" textFill="#354259">
+         <font>
+            <Font name="Segoe UI" size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="956.0" layoutY="925.0" onAction="#btnCancel" prefHeight="61.0" prefWidth="260.0" style="-fx-background-color: BAA4AF; -fx-background-radius: 15;" text="Cancel" textFill="#354259">
+         <font>
+            <Font name="Segoe UI" size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtPrice" labelFloat="true" layoutX="790.0" layoutY="816.0" prefHeight="30.0" prefWidth="380.0" promptText="Price :">
+         <font>
+            <Font name="Segoe UI" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextArea fx:id="txtAreaDescription" labelFloat="true" layoutX="791.0" layoutY="507.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="113.0" prefWidth="369.0" promptText="Description">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextArea>
+   </children>
+</AnchorPane>
